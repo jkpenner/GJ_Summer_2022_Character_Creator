@@ -28,6 +28,7 @@ fn main() {
         .add_state(GameState::AssetLoading)
         .insert_resource(ClearColor(Color::BLACK))
         .add_plugins(DefaultPlugins)
+        .add_plugin(GamePlugin)
         .run();
 }
 
